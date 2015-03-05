@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Angular fun!</title>
+    <script data-require="angular.js@*" data-semver="1.4.0-beta.4" src="Scripts/angular.min.js"></script>
+    <script src="Scripts/Angular2.js"></script>
+    <link href="Styles/OSCAngularStyle.css" rel="stylesheet" />
+</head>
+
+<body ng-app>
+
+    <img src="img/AngularJSwordGoogle.png" />
+    <nav>
+        <ul>
+            <li>
+                <a href="Angular2.html">Angular2.html</a>
+            </li>
+            <li>
+                <a href="AngularWorkShopPage.html">AngularWorkShopPage.html</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h3>LESSON 1 : Angular requires the following Script: </h3>
+    &lt;script data-require="angular.js@*" data-semver="1.4.0-beta.4" src="Scripts/angular.min.js"&gt;&lt;/script&gt;
+      <br />
+
+    <h3>DIRECTIVES 1: First Directive</h3>
+    add the "ng-app" DIRECTIVE to the tag where you want angular to Appear/function. EXAMPLE: &lt;body ng-app&gt;
+
+      <h3>DIRECTIVES 2: Create A model from Html Input</h3>
+    Add the ng-model="name" Directive to any Input tag or any HTML control that accepts a value. EXAMPLE: &lt;p&gt;Name: &lt;input type="text" ng-model="name"&gt;&lt;/p&gt; 
+
+      <h3>DIRECTIVES 3: Bind your model data</h3>
+    Add the ng-bind="name" Directive to any tag.  EXAMPLE:&lt;p ng-bind="name"&gt;&lt;/p&gt;
+
+      <h3>DIRECTIVES 4: Initialize your model data</h3>
+    Add ng-init="firstName='John'" Directive to any tag
+
+          <h3>EXPRESSIONS 1: Are written with {{ expression }} and can be used instead of ng-bind="expression"</h3>
+    enclose everything in mustaches.
+
+    <h3>EXPRESSIONS 2: A Division Math Problem:</h3>
+    {{ 843 / 42 }}
+
+      <h3>CONTROLLERS 1: </h3>
+    <div ng-controller="personController">
+        First Name:
+        <input type="text" ng-model="firstName" /><br />
+        Last Name:
+        <input type="text" ng-model="lastName" /><br />
+        <br>
+        Full Name: {{firstName + " " + lastName}}
+
+    </div>
+
+    <script>
+        function personController($scope) {
+            $scope.firstName = "John";
+            $scope.lastName = "Doe";
+        }
+    </script>
+
+    <br />
+    __________________________________________
+      <br />
+    <h2>Contacts</h2>
+
+    <div ng-controller="contactController" class="container">
+        <strong class="error">{{ error }}</strong>
+
+        <div class="row">
+            <div class="logs-table col-xs-12">
+                <table class="table table-bordered table-hover" style="width: 100%">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Country</th>
+                    </tr>
+
+                    <tr ng-repeat="contact in contacts">
+                        <td>{{ contact.Id }}</td>
+                        <td>{{ contact.Name }}</td>
+                        <td>{{ contact.Address }}</td>
+                        <td>{{ contact.City }}</td>
+                        <td>{{ contact.Country }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

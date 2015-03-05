@@ -1,0 +1,28 @@
+﻿body {
+}
+
+nav {
+    color: white;
+    font-weight: bold;
+    background-color: #C4473A;
+}
+
+    nav ul {
+        list-style-type: none;
+    }
+
+        nav ul li {
+            display: inline-block;
+ 
+        }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                           margin:5px;
+            padding:5px;
+            }
+
+                nav ul li a:hover {
+                    background-color: black;
+                }

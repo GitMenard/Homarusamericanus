@@ -1,0 +1,10 @@
+C:\Users\MartinM\Documents\Visual Studio 2012\Projects\Homarusamericanus\Homarusamericanus\bin\WebApplication1.dll
+C:\Users\MartinM\Documents\Visual Studio 2012\Projects\Homarusamericanus\Homarusamericanus\bin\WebApplication1.pdb
+C:\Users\MartinM\Documents\Visual Studio 2012\Projects\Homarusamericanus\Homarusamericanus\obj\Debug\AngularFun.csprojResolveAssemblyReference.cache
+C:\Users\MartinM\Documents\Visual Studio 2012\Projects\Homarusamericanus\Homarusamericanus\obj\Debug\WebApplication1.dll
+C:\Users\MartinM\Documents\Visual Studio 2012\Projects\Homarusamericanus\Homarusamericanus\obj\Debug\WebApplication1.pdb
+C:\GitHubC\Homarusamericanus\Homarusamericanus\bin\WebApplication1.dll
+C:\GitHubC\Homarusamericanus\Homarusamericanus\bin\WebApplication1.pdb
+C:\GitHubC\Homarusamericanus\Homarusamericanus\obj\Debug\AngularFun.csprojResolveAssemblyReference.cache
+C:\GitHubC\Homarusamericanus\Homarusamericanus\obj\Debug\WebApplication1.dll
+C:\GitHubC\Homarusamericanus\Homarusamericanus\obj\Debug\WebApplication1.pdb

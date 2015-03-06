@@ -1,0 +1,31 @@
+﻿<link href="../Styles/OSCAngularFooter.css" rel="stylesheet" />
+
+<footer ng-controller="Ctrl">
+    Copyright 2015, Learning Hour Inc.<br />
+
+    
+    Buttons --->
+<button ng-click="count = count + 1" ng-init="count=0">
+  Like
+</button>
+<span>
+  : {{count}}
+</span>|
+    <button ng-click="count2 = count2 - 1" ng-init="count2=0">
+ DisLike
+</button>
+<span>
+  : {{count2}}
+</span>
+ <!--   ----------------------------------->
+    <br />
+
+<!--    ngStorate and Local Storage ->
+     <button ng-click="$storage.x = $storage.x + 1">{{$storage.x}}</button> + <button ng-click="$storage.y = $storage.y + 1">{{$storage.y}}</button> = {{$storage.x + $storage.y}}-->
+
+    <br />
+
+        2. Totals, ngStorate and Local Storage ---> Click to set:
+     <button ng-click="$storage.x = count">{{$storage.x}}</button> + <button ng-click="$storage.y = count2">{{$storage.y}}</button> = {{$storage.x + $storage.y}}
+
+</footer>

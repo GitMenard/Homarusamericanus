@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Angular3.html" />
+    <Content Include="AngularPartialView\footer.html" />
     <Content Include="Scripts\Angular3.js" />
     <Content Include="Angular4.html" />
     <Content Include="AngularPartialView\navigation.html" />
@@ -834,6 +835,7 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
+    <Content Include="Styles\OSCAngularFooter.css" />
     <Content Include="Styles\OSCAngularGeneral.css" />
     <Content Include="Styles\OSCAngularNAV.css" />
     <Content Include="temp1.html" />

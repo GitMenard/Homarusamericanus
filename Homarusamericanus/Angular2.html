@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Ang. Page 2</title>
-<!--<script data-require="angular.js@*" data-semver="1.4.0-beta.4" src="Scripts/angular.min.js"></script>-->
+   <script src="Scripts/Angular4.js"></script>
+    <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
     <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 </head>
-<body ng-app>
+<body>
 
 <div ng-include src="'AngularPartialView/navigation.html'"></div>
     <h3>CONTROLLER 1: A). Create A Controller in JavaScript then B). Display the Controller DATA in Html</h3>
@@ -36,6 +37,6 @@
         }
     </script>
 
-    <br /><br /><br /><br />
+     <div ng-include src="'AngularPartialView/footer.html'"></div>
 </body>
 </html>

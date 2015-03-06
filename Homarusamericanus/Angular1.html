@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app='app' xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>Angular fun!</title>
     <script data-require="angular.js@*" data-semver="1.4.0-beta.4" src="Scripts/angular.min.js"></script>
-
+    <script src="Scripts/Angular4.js"></script>
+    <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
     <link href="Styles/OSCAngularGeneral.css" rel="stylesheet" />
 </head>
 
-<body ng-app>
+<body>
     
     <div ng-include src="'AngularPartialView/navigation.html'"></div>
 
     <h3>LESSON 1 : Angular requires the following Script: </h3>
-   <div class="green"> &lt;script data-require="angular.js@*" data-semver="1.4.0-beta.4" src="Scripts/angular.min.js"&gt;&lt;/script&gt;</div>
-       <br /><b>or</b><br />
+<!--   <div class="green"> &lt;script data-require="angular.js@*" data-semver="1.4.0-beta.4" src="Scripts/angular.min.js"&gt;&lt;/script&gt;</div>
+       <br /><b>or</b><br />-->
 
        <div class="pink">&lt;script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"&gt;&lt;/script&gt;
 
@@ -45,37 +46,7 @@
     
 
  
-
-    <br /><br /><br /><br /><br />
-  <!--  __________________________________________-->
-   <!--   <br />
-    <h2>Contacts</h2>
-
-    <div ng-controller="contactController" class="container">
-        <strong class="error">{{ error }}</strong>
-
-        <div class="row">
-            <div class="logs-table col-xs-12">
-                <table class="table table-bordered table-hover" style="width: 100%">
-                    <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>City</th>
-                        <th>Country</th>
-                    </tr>
-
-                    <tr ng-repeat="contact in contacts">
-                        <td>{{ contact.Id }}</td>
-                        <td>{{ contact.Name }}</td>
-                        <td>{{ contact.Address }}</td>
-                        <td>{{ contact.City }}</td>
-                        <td>{{ contact.Country }}</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>-->
+    <div ng-include src="'AngularPartialView/footer.html'"></div>
 </body>
 
 </html>

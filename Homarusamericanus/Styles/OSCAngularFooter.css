@@ -1,0 +1,11 @@
+﻿body {
+}
+
+footer {
+    margin-top:100px;
+    color: white;
+    font-weight: bold;
+    background-color: #C4473A;
+    height:100px;
+    padding:20px;
+}

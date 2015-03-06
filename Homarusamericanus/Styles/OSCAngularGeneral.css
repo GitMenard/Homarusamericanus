@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.green {
+    font-weight:bold;
+    color:darkgreen;
+    display:inline;
+}
+.pink {
+    font-weight:bold;
+    color:magenta;
+    display:inline;
+
+}

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ang. Repeat</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+</head>
+<body ng-app="">
+    <div ng-include src="'AngularPartialView/navigation.html'"></div>
+    <h3><strong>Ajax get request to a server.  A "ng-repeat" directive is used to cycle through the response and add rows to the table</strong></h3>
+    <div ng-controller="customersController">
+
+        <table border="1">
+            <tr>
+                <td><strong>Name</strong></td>
+                <td><strong>City</strong></td>
+                <td><strong>Country</strong></td>
+            </tr>
+
+          <!--  <tr ng-repeat="x in names | orderBy:'Name'| filter:test">-->
+            <tr ng-repeat="x in names">
+                <td>{{ x.Name }}</td>
+                <td>{{ x.City }}</td>
+                <td>{{ x.Country }}</td>
+            </tr>
+        </table>
+
+    </div>
+
+    
+        <script src="Scripts/Angular3.js"></script>
+
+    <br /><br /><br /><br />
+</body>
+</html>

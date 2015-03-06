@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html ng-app="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ang. Template Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <script type="text/ng-template" id="personList">
+                <td>{{ x.Name }}</td>
+                <td>{{ x.City }}</td>
+                <td>{{ x.Country }}</td>
+    </script>
+
+</head>
+
+<body>
+
+    <div ng-include src="'AngularPartialView/navigation.html'"></div>
+
+    <h3>An "ng-template" example (Without Routing) </h3>
+    Removes the need for the following Javascript lines from the AJAX sucess function:<br /><br />      
+    var template2 = $.templates("#InventoryList");<br />  
+    var htmlOutput2 = template2.render(msg);<br />  
+    $("#RealHomeList").html(htmlOutput2);<br />  <br />
+
+    by directly accepting the template,
+
+    <div ng-controller="customersController">
+        <table border="1">
+            <tr>
+                <td><strong>Name</strong></td>
+                <td><strong>City</strong></td>
+                <td><strong>Country</strong></td>
+            </tr>
+            <tr ng-repeat="x in names | orderBy:'Name'| filter:test" ng-include="'personList'"></tr>
+
+        </table>
+    </div>
+
+    <!-- <div ng-view></div>-->
+
+    <script src="Scripts/Angular3.js"></script>
+
+    <br /><br /><br /><br />
+</body>
+
+</html>

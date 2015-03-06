@@ -1,37 +1,41 @@
 ﻿<!DOCTYPE html>
-<html ng-app="plunker">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ang. Page 2</title>
+<!--<script data-require="angular.js@*" data-semver="1.4.0-beta.4" src="Scripts/angular.min.js"></script>-->
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+<body ng-app>
 
-  <head>
-    <meta charset="utf-8" />
-    <title>AngularJS Plunker</title>
-    <script>document.write('<base href="' + document.location + '" />');</script>
-    <link rel="stylesheet" href="style.css" />
-    <script data-require="angular.js@1.1.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js" data-semver="1.1.5"></script>
-    <script src="Scripts/Angular2.js"></script>
-    <script type="text/ng-template" id="list.html">
-      <table>
-        <theader>
-          <tr><td>Name</td><td>Book</td><td></td></tr>
-        </theader>
-        <tbody>
-          <tr ng-repeat="student in students">
-            <td>{{ student.name }}</td><td>{{ student.book }}</td><td><a ng-href="#/edit/{{ student.book }}?name={{student.name}}">Edit</a></td>
-          </tr>
-        </tbody>
-      </table>
+<div ng-include src="'AngularPartialView/navigation.html'"></div>
+    <h3>CONTROLLER 1: A). Create A Controller in JavaScript then B). Display the Controller DATA in Html</h3>
+       &lt;script&gt;
+    <br />
+           function personController($scope) {<br />
+               $scope.firstName = "John";<br />
+               $scope.lastName = "Doe";<br />
+           }<br />
+    &lt;/script&gt;
+     <h3>CONTROLLERS 1: B). Display the Controller Data in HTML </h3>
+    Type in the boxes and watch the dynamically update
+    <br />
+    <div ng-controller="personController">
+        First Name:
+        <input type="text" ng-model="firstName" /><br />
+        Last Name:
+        <input type="text" ng-model="lastName" /><br />
+        <br>
+        Full Name: {{firstName + " " + lastName}}
+
+    </div>
+
+    <script>
+        function personController($scope) {
+            $scope.firstName = "John";
+            $scope.lastName = "Doe";
+        }
     </script>
-    <script type="text/ng-template" id="edit.html">
-      <div>
-        <p>Current Student: {{ student.name }}</p>
-        <label>Select A Book: </label>
-        <select ng-model="student.book" ng-options="book for book in unassigned">
-        </select>
-        <p> You have selected: {{student.book}}</p>
-    </script>
-  </head>
 
-  <body>
-    <div ng-view></div>
-  </body>
-
+    <br /><br /><br /><br />
+</body>
 </html>

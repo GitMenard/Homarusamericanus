@@ -57,7 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Angular2.html" />
+    <Content Include="Angular3.html" />
+    <Content Include="Scripts\Angular3.js" />
+    <Content Include="Angular4.html" />
+    <Content Include="AngularPartialView\navigation.html" />
     <Content Include="AngularWorkShopPage.html" />
     <Content Include="img\angular-js.png" />
     <Content Include="img\AngularJSwordGoogle.png" />
@@ -87,6 +90,7 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Angular1.html" />
     <Content Include="Scripts\Angular2.js" />
+    <Content Include="Scripts\Angular4.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-et.js" />
@@ -830,8 +834,11 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
-    <Content Include="Styles\OSCAngularStyle.css" />
+    <Content Include="Styles\OSCAngularGeneral.css" />
+    <Content Include="Styles\OSCAngularNAV.css" />
+    <Content Include="temp1.html" />
     <Content Include="Web.config" />
+    <Content Include="WhyAngularjs.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -850,6 +857,7 @@
     <Content Include="Scripts\angular-cookies.min.js.map" />
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
+    <Content Include="Angular2.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
